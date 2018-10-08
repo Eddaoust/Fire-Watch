@@ -11,7 +11,7 @@
     </div>
 
     <div class="row">
-        {% for category in categories %}
+        {% for category in categories.getCategories() %}
             <div class="col-xl-4">
                 <div class="card">
                     <img class="card-img-top" src="{{ asset('img/') ~ category.img }}" alt="Card image cap">

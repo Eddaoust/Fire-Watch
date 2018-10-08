@@ -28,7 +28,7 @@
                         Collection <span class="badge badge-pill badge-warning">New</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% for category in categories %}
+                        {% for category in categories.getCategories() %}
                             <a class="dropdown-item" href="{{ path('product_list', {'cat': category.id }) }}">{{ category.name }}</a>
                         {% endfor %}
                     </div>
