@@ -28,10 +28,9 @@
                         Collection <span class="badge badge-pill badge-warning">New</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ path('product_list', {'cat': category0.id}) }}">Men's Watches</a>
-                        <a class="dropdown-item" href="{{ path('product_list', {'cat': category1.id}) }}">Women's Watches</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{{ path('product_list', {'cat': category2.id}) }}">Kid's Watches</a>
+                        {% for category in categories %}
+                            <a class="dropdown-item" href="{{ path('product_list', {'cat': category.id }) }}">{{ category.name }}</a>
+                        {% endfor %}
                     </div>
                 </li>
                 <li class="nav-item">
