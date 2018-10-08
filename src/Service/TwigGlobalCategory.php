@@ -10,15 +10,37 @@ namespace App\Service;
 
 
 use App\Entity\Category;
-use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 
 class TwigGlobalCategory
 {
-    public function getCategories(EntityManager $entityManager)
+    /**
+     * Service permettant d'accéder aux catégories de montre globalement
+     */
+    private $categories;
+
+    public function __construct(EntityManagerInterface $entityManager)
     {
         $categoriesRepo = $entityManager->getRepository(Category::class);
         $categories = $categoriesRepo->findAll();
 
-        return $categories;
+        $this->setCategories($categories);
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * @param mixed $categories
+     */
+    public function setCategories($categories): void
+    {
+        $this->categories = $categories;
+    }
+
 }
