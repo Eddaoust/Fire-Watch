@@ -15,18 +15,7 @@ class ProductController extends AbstractController
      */
     public function index()
     {
-        $repo = $this->getDoctrine()
-            ->getRepository(Category::class);
-        $category = $repo->findAll();
-
-        foreach ($category as $index => $key)
-        {
-            $this->get('twig')->addGlobal('category'.$index, $key); // Création des variables globales
-        }
-
-        return $this->render('product/home.html.twig', [
-            'categories' => $category
-        ]);
+        return $this->render('product/home.html.twig');
     }
 
     /**
