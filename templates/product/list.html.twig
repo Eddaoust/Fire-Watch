@@ -8,10 +8,11 @@
             {% for product in products %}
                     <div class="col-xl-4">
                         <div class="card" style="height: 450px; margin-bottom: 20px">
-                            <img class="card-img-top" src="{{ asset('img/collection/') ~ product.img }}" alt="Card image cap" style="height: 350px">
+                            <img class="card-img-top" src="{{ asset('img/collection/') ~ product.img }}" alt="Card image cap" style="height: 300px">
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.name }}</h5>
                                 <h3 class="card-title">{{ product.price }} &euro;</h3>
+                                <h5 class="card-title text-warning">Membre {{ product.promo }} %</h5>
                             </div>
                         </div>
                     </div>
