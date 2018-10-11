@@ -3,5 +3,64 @@
 {% block title %}Administration{% endblock %}
 
 {% block body %}
-
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Dashboard</h1>
+            <p class="lead">The space where you can manage all your product and user.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-5">
+            <h5>Last user registered:</h5>
+            <table class="table table-hover table-bordered table-sm">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Roles</th>
+                    <th scope="col">Created</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for user in users %}
+                    <tr>
+                        <th scope="row">{{ user.id }}</th>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.roles[0] }}</td>
+                        <td>{{ user.created | date('d/m/Y') }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xl-5 offset-xl-2">
+            <h5>Last product ordered:</h5>
+            <table class="table table-hover table-bordered table-sm">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Promo</th>
+                    <th scope="col">Image</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for product in products %}
+                    {% if loop.index <= 10 %}
+                    <tr>
+                        <th scope="row">{{ product.id }}</th>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.price }}&euro;</td>
+                        <td>{{ product.promo }} %</td>
+                        <td><img src="{{ asset('img/collection/') ~ product.img }}" style="width: 50px"></td>
+                    </tr>
+                    {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
 {% endblock %}
