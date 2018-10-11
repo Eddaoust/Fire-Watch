@@ -41,6 +41,12 @@
                 </li>
             </ul>
         </div>
+        <form class="form-inline my-2 my-lg-0" method="post" action="#">
+            <input class="form-control form-control-sm mr-sm-2" type="text" placeholder="Email" aria-label="Email">
+            <input class="form-control form-control-sm mr-sm-2" type="password" placeholder="Password" aria-label="Password">
+            <button class="btn btn-outline-warning btn-sm my-2 my-sm-0" type="submit" style="margin-right: 5px">Connexion</button>
+            <a href="{{ path('registration') }}" class="btn btn-outline-warning btn-sm my-2 my-sm-0">Register</a>
+        </form>
     </nav>
     <div class="container">
         {% block body %}{% endblock %}
@@ -88,6 +94,7 @@
             integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
             crossorigin=""></script>
     <script src="{{ asset('js/map.js')}}"></script>
+    <script src="{{ asset('js/registerModal.js')}}"></script>
 {% block javascript %}{% endblock %}
 </body>
 </html>
