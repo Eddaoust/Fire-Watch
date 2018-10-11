@@ -41,14 +41,45 @@
                 </li>
             </ul>
         </div>
-        <form class="form-inline my-2 my-lg-0" method="post" action="#">
-            <input class="form-control form-control-sm mr-sm-2" type="text" placeholder="Email" aria-label="Email">
-            <input class="form-control form-control-sm mr-sm-2" type="password" placeholder="Password" aria-label="Password">
-            <button class="btn btn-outline-warning btn-sm my-2 my-sm-0" type="submit" style="margin-right: 5px">Connexion</button>
-            <a href="{{ path('registration') }}" class="btn btn-outline-warning btn-sm my-2 my-sm-0">Register</a>
-        </form>
+        {% if app.user %}
+            <a href="{{ path('logout') }}" class="btn btn-outline-warning btn-sm " style="margin-right: 5px">Logout</a>
+        {% else %}
+            <button class="btn btn-outline-warning btn-sm " type="button" data-toggle="modal" data-target="#exampleModalCenter" style="margin-right: 5px">Login</button>
+            <a href="{{ path('registration') }}" class="btn btn-outline-warning btn-sm">Register</a>
+        {% endif %}
     </nav>
     <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="{{ path('login') }}">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" name="_username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" name="_password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Stay logged</label>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% block body %}{% endblock %}
     </div>
 

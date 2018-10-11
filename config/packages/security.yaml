@@ -14,8 +14,19 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
+            pattern: ^/
+
             anonymous: true
+
             provider: in_database
+
+            form_login:
+                login_path: login
+                check_path: login
+
+            logout:
+                path: logout
+                target: product_home
 
             # activate different ways to authenticate
 
