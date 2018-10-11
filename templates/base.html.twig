@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 50px">
-        <a class="navbar-brand" href="#">Cloud Watch</a>
+        <a class="navbar-brand" href="#"><img src="{{ asset('img/logo/firebase-1.svg') }}" width="30" height="30" style="margin-bottom: 5px"> Cloud Watch</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,7 +43,7 @@
         </div>
         {% if app.user %}
             {% if app.user.roles[0] == "ROLE_ADMIN" %}
-                <a href="{{ path('product_admin_home') }}" class="btn btn-outline-warning btn-sm " style="margin-right: 5px">Administration</a>
+                <a href="{{ path('product_admin_home') }}" class="btn btn-outline-warning btn-sm" style="margin-right: 5px">Administration</a>
             {% endif %}
             <a href="{{ path('logout') }}" class="btn btn-outline-warning btn-sm " style="margin-right: 5px">Logout</a>
         {% else %}
