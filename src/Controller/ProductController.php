@@ -34,4 +34,12 @@ class ProductController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/terms", name="product_terms")
+     */
+    public function termsOfUse()
+    {
+        return $this->render('product/termsOfUse.html.twig');
+    }
+
 }
