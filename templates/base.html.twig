@@ -42,6 +42,9 @@
             </ul>
         </div>
         {% if app.user %}
+            {% if app.user.roles[0] == "ROLE_ADMIN" %}
+                <a href="{{ path('product_admin_home') }}" class="btn btn-outline-warning btn-sm " style="margin-right: 5px">Administration</a>
+            {% endif %}
             <a href="{{ path('logout') }}" class="btn btn-outline-warning btn-sm " style="margin-right: 5px">Logout</a>
         {% else %}
             <button class="btn btn-outline-warning btn-sm " type="button" data-toggle="modal" data-target="#exampleModalCenter" style="margin-right: 5px">Login</button>
@@ -107,10 +110,11 @@
                 <div class="col-xl-4">
                     <h4 class="text-light">Quick links</h4>
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action text-light bg-dark">Home</a>
+                        <a href="{{ path('product_home') }}" class="list-group-item list-group-item-action text-light bg-dark">Home</a>
                         <a href="#" class="list-group-item list-group-item-action text-light bg-dark">Collection</a>
                         <a href="#" class="list-group-item list-group-item-action text-light bg-dark">Membre</a>
                         <a href="#" class="list-group-item list-group-item-action text-light bg-dark">About us</a>
+                        <a href="{{ path('product_terms') }}" class="list-group-item list-group-item-action text-light bg-dark">Terms of use</a>
                     </div>
                 </div>
             </div>
