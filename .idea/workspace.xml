@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9aecc61f-b13e-4d4e-9f39-b690ef4d5927" name="Default Changelist" comment="" />
+    <list default="true" id="9aecc61f-b13e-4d4e-9f39-b690ef4d5927" name="Default Changelist" comment="Configuration du login/logout">
+      <change afterPath="$PROJECT_DIR$/templates/product_admin/listProducts.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product_admin/home_admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product_admin/home_admin.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +51,14 @@
         <item name="ed-symfony@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="ed-symfony: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="category: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="product: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ed-symfony@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ed-symfony: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -52,62 +67,70 @@
     <session id="808193094">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="category" value="8" />
+          <entry key="category" value="11" />
           <entry key="css" value="1" />
           <entry key="env" value="1" />
-          <entry key="js" value="1" />
-          <entry key="php" value="12" />
-          <entry key="product" value="7" />
+          <entry key="html" value="1" />
+          <entry key="js" value="3" />
+          <entry key="php" value="48" />
+          <entry key="product" value="15" />
           <entry key="sql" value="1" />
-          <entry key="twig" value="29" />
-          <entry key="yaml" value="8" />
+          <entry key="twig" value="68" />
+          <entry key="user" value="5" />
+          <entry key="yaml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
           <entry key="CSS" value="1" />
-          <entry key="Database Element" value="15" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="12" />
+          <entry key="Database Element" value="31" />
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PHP" value="48" />
           <entry key="Scratch" value="1" />
-          <entry key="Twig" value="29" />
-          <entry key="YAML" value="8" />
+          <entry key="Twig" value="68" />
+          <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="38" />
+          <entry key="cell" value="49" />
           <entry key="env" value="22" />
-          <entry key="js" value="1" />
-          <entry key="php" value="1343" />
-          <entry key="twig" value="2036" />
-          <entry key="txt" value="10" />
-          <entry key="yaml" value="91" />
+          <entry key="js" value="14" />
+          <entry key="php" value="3479" />
+          <entry key="twig" value="5768" />
+          <entry key="txt" value="672" />
+          <entry key="yaml" value="466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="22" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="1343" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Scratch" value="38" />
-          <entry key="Twig" value="2036" />
-          <entry key="YAML" value="91" />
+          <entry key="JavaScript" value="14" />
+          <entry key="PHP" value="3479" />
+          <entry key="PLAIN_TEXT" value="672" />
+          <entry key="Scratch" value="49" />
+          <entry key="Twig" value="5768" />
+          <entry key="YAML" value="466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="2" />
+          <entry key="PHP Class.type" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -115,40 +138,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ProductController.php">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ProductAdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-              <folding>
-                <element signature="e#34#58#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="800">
+              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/product_admin/listProducts.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="229">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <element signature="e#1696#1715#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
+        <entry file="file://$PROJECT_DIR$/templates/product_admin/home_admin.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/product/home.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="805">
+              <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="103" />
+              <folding>
+                <element signature="e#2429#2448#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,6 +179,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -169,16 +189,28 @@
         <option value="$PROJECT_DIR$/public/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/templates/product/index.html.twig" />
         <option value="$PROJECT_DIR$/public/js/map.js" />
-        <option value="$PROJECT_DIR$/templates/product/list.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Product.php" />
-        <option value="$PROJECT_DIR$/templates/product/home.html.twig" />
         <option value="$PROJECT_DIR$/src/DataFixtures/ProductFixtures.php" />
         <option value="$PROJECT_DIR$/src/Services/TwigGlobalCategory.php" />
-        <option value="$PROJECT_DIR$/src/Controller/ProductController.php" />
-        <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/src/Service/CategoryId.php" />
         <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
+        <option value="$PROJECT_DIR$/src/Service/TwigGlobalCategory.php" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/public/js/registerModal.js" />
+        <option value="$PROJECT_DIR$/src/Service/TwigGlobalRegistrationForm.php" />
+        <option value="$PROJECT_DIR$/src/Form/UserRegistrationType.php" />
+        <option value="$PROJECT_DIR$/templates/security/registration.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/ProductController.php" />
+        <option value="$PROJECT_DIR$/templates/product/termsOfUse.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/templates/product/home.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/ProductAdminController.php" />
+        <option value="$PROJECT_DIR$/templates/product_admin/home_admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/templates/product/list.html.twig" />
+        <option value="$PROJECT_DIR$/templates/product_admin/listProducts.html.twig" />
       </list>
     </option>
   </component>
@@ -299,8 +331,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -366,11 +398,13 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -383,11 +417,33 @@
               <item name="ed-symfony" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ed-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ed-symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ed-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ed-symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ed-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ed-symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ed-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ed-symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="product_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,6 +453,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -424,38 +481,212 @@
       <workItem from="1538640344030" duration="21886000" />
       <workItem from="1538729767018" duration="713000" />
       <workItem from="1538856469973" duration="3950000" />
-      <workItem from="1538907240469" duration="567000" />
+      <workItem from="1538907240469" duration="1554000" />
+      <workItem from="1538983787694" duration="8515000" />
+      <workItem from="1539068809904" duration="575000" />
+      <workItem from="1539085413534" duration="20000" />
+      <workItem from="1539085476937" duration="279000" />
+      <workItem from="1539087589958" duration="4000" />
+      <workItem from="1539242627335" duration="16109000" />
+      <workItem from="1539286699976" duration="1504000" />
+      <workItem from="1539330114689" duration="395000" />
+      <workItem from="1539335051546" duration="2534000" />
+      <workItem from="1539690044566" duration="4556000" />
     </task>
+    <task id="LOCAL-00001" summary="Creation du service pour déclarer les catégories en global">
+      <created>1538994759106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538994759106</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ajout des catégories dynamique dans la navbar">
+      <created>1538994827386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538994827386</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Ajout des catégories dynamique dans la navbar">
+      <created>1539010722558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539010722558</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modification du service">
+      <created>1539010755527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539010755527</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Suppression de la requète Doctrine dans la méthode index()">
+      <created>1539010789255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539010789255</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Modification des liens du footer">
+      <created>1539024186419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539024186419</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ajout des promo">
+      <created>1539085606581</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1539085606581</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Modification des liens dans le footer">
+      <created>1539085636493</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1539085636493</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ajout du provider in_database">
+      <created>1539251309055</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1539251309055</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Modal pour le login form">
+      <created>1539251335197</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1539251335197</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ajout de contrainte de registration &#10;Attribut confirm password">
+      <created>1539251411584</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539251411584</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Ajout form registration &amp; login">
+      <created>1539251440865</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1539251440865</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Registration form">
+      <created>1539251467985</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1539251467985</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add SecurityController">
+      <created>1539251498940</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1539251498940</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add UserForm">
+      <created>1539251530563</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1539251530563</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Configuration du login/logout">
+      <created>1539255507117</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1539255507117</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add Terms of use">
+      <created>1539257963143</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1539257963143</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add admin area">
+      <created>1539257997664</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1539257997664</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add Product admin controller">
+      <created>1539258045628</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1539258045628</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Correction de la redirection">
+      <created>1539261624174</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1539261624174</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Ajout tableaux">
+      <created>1539261731971</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1539261731971</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Refactoring">
+      <created>1539288573904</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1539288573904</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27116000" />
+    <option name="totallyTimeSpent" value="62594000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15761448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897383" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32987553" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32987553" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32897383" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3279678" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35714287" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32987553" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32987553" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.124068156" />
+      <window_info anchor="right" id="Database" order="4" weight="0.14217253" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13631523" />
@@ -487,6 +718,30 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creation du service pour déclarer les catégories en global" />
+    <MESSAGE value="Ajout des catégories dynamique dans la navbar" />
+    <MESSAGE value="Modification du service" />
+    <MESSAGE value="Suppression de la requète Doctrine dans la méthode index()" />
+    <MESSAGE value="Modification des liens du footer" />
+    <MESSAGE value="Ajout des promo" />
+    <MESSAGE value="Modification des liens dans le footer" />
+    <MESSAGE value="Ajout du provider in_database" />
+    <MESSAGE value="Modal pour le login form" />
+    <MESSAGE value="Ajout de contrainte de registration &#10;Attribut confirm password" />
+    <MESSAGE value="Ajout form registration &amp; login" />
+    <MESSAGE value="Registration form" />
+    <MESSAGE value="Add SecurityController" />
+    <MESSAGE value="Add UserForm" />
+    <MESSAGE value="Configuration du login/logout" />
+    <MESSAGE value="Add Terms of use" />
+    <MESSAGE value="Add admin area" />
+    <MESSAGE value="Add Product admin controller" />
+    <MESSAGE value="Correction de la redirection" />
+    <MESSAGE value="Ajout tableaux" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -508,44 +763,9 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/163611db-a917-44d5-8be5-4f870a4ed3ef/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-339" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://163611db-a917-44d5-8be5-4f870a4ed3ef/schema/ed-symfony/table/product">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/product/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://163611db-a917-44d5-8be5-4f870a4ed3ef/schema/ed-symfony/table/category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataFixtures/ProductFixtures.php">
@@ -556,42 +776,186 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/TwigGlobalCategory.php" />
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+    <entry file="file://$PROJECT_DIR$/src/Service/CategoryId.php" />
+    <entry file="file://$PROJECT_DIR$/src/Repository/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="140">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/CategoryId.php" />
-    <entry file="file://$PROJECT_DIR$/templates/product/home.html.twig">
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/registerModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/TwigGlobalRegistrationForm.php" />
+    <entry file="file://$PROJECT_DIR$/src/Form/UserRegistrationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/security/registration.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/TwigGlobalCategory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/twig.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        <state relative-caret-position="120">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product/termsOfUse.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1541">
+          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/dev/easy_log_handler.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product_admin/index.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/UserAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://163611db-a917-44d5-8be5-4f870a4ed3ef/schema/ed-symfony/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="e#34#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://163611db-a917-44d5-8be5-4f870a4ed3ef/schema/ed-symfony/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ProductAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://163611db-a917-44d5-8be5-4f870a4ed3ef/schema/ed-symfony/table/product">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product_admin/home_admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="103" />
           <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
+            <element signature="e#2429#2448#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/product_admin/listProducts.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        <state relative-caret-position="229">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="e#1696#1715#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

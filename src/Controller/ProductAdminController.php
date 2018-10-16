@@ -27,4 +27,18 @@ class ProductAdminController extends AbstractController
             'users' => $users
         ]);
     }
+
+    /**
+     * @Route("/admin/products", name="product_admin")
+     */
+    public function listProducts()
+    {
+        $repo = $this->getDoctrine()
+            ->getRepository(Product::class);
+        $products = $repo->findAll();
+
+        return $this->render('product_admin/listProducts.html.twig', [
+            'products' => $products
+        ]);
+    }
 }
