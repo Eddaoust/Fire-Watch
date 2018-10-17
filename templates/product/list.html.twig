@@ -6,18 +6,20 @@
 
 <div class="row">
     {% for product in products %}
-            <div class="col-xl-4">
-                <a href="{{ path('product_one', {'id': product.id}) }}" style="text-decoration: none">
-                    <div class="card" style="height: 450px; margin-bottom: 20px">
-                        <img class="card-img-top" src="{{ asset('img/collection/') ~ product.img }}" alt="Card image cap" style="height: 300px">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ product.name }}</h5>
-                            <h3 class="card-title">{{ product.price }} &euro;</h3>
-                            <h5 class="card-title text-warning">Membre {{ product.promo }} %</h5>
+        {% if product.published %}
+                <div class="col-xl-4">
+                    <a href="{{ path('product_one', {'id': product.id}) }}" style="text-decoration: none">
+                        <div class="card" style="height: 450px; margin-bottom: 20px">
+                            <img class="card-img-top" src="{{ asset('img/collection/') ~ product.img }}" alt="Card image cap" style="height: 300px">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.name }}</h5>
+                                <h3 class="card-title">{{ product.price }} &euro;</h3>
+                                <h5 class="card-title text-warning">Membre {{ product.promo }} %</h5>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+        {% endif %}
     {% endfor %}
 </div>
 {% endblock %}
