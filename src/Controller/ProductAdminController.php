@@ -4,7 +4,10 @@ namespace App\Controller;
 
 use App\Entity\Product;
 use App\Entity\User;
+use App\Form\ProductType;
+use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ProductAdminController extends AbstractController
@@ -39,6 +42,31 @@ class ProductAdminController extends AbstractController
 
         return $this->render('product_admin/listProducts.html.twig', [
             'products' => $products
+        ]);
+    }
+
+    /**
+     * @Route("/admin/update-product/{id}", name="product_update")
+     */
+    public function updateProduct(Request $request, ObjectManager $manager, $id)
+    {
+        $repo = $this->getDoctrine()
+            ->getRepository(Product::class);
+        $product = $repo->find($id);
+
+        $form = $this->createForm(ProductType::class, $product);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid())
+        {
+            $manager->persist($product);
+            $manager->flush();
+
+            return $this->redirectToRoute('product_admin');
+        }
+
+        return $this->render('product_admin/updateProduct.html.twig',[
+            'form' => $form->createView()
         ]);
     }
 }
