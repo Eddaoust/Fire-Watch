@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Category;
 use App\Entity\Product;
+use App\Form\ProductType;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -31,6 +32,20 @@ class ProductController extends AbstractController
 
         return $this->render('product/list.html.twig', [
             'products' => $product
+        ]);
+    }
+
+    /**
+     * @Route("/product/{id}", name="product_one")
+     */
+    public function oneProduct($id)
+    {
+        $repo = $this->getDoctrine()
+            ->getRepository(Product::class);
+        $product = $repo->find($id);
+
+        return $this->render('product/oneProduct.html.twig', [
+            'product' => $product
         ]);
     }
 
