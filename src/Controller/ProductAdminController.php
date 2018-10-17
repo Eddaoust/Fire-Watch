@@ -69,4 +69,20 @@ class ProductAdminController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+
+    /**
+     * @Route("/admin/published/{id}", name="product_published")
+     */
+    public function published(ObjectManager $manager, $id)
+    {
+        $repo = $this->getDoctrine()
+            ->getRepository(Product::class);
+        $product = $repo->find($id);
+
+        $product->getPublished() ? $product->setPublished(0) : $product->setPublished(1);
+        $manager->persist($product);
+        $manager->flush();
+
+        return $this->redirectToRoute('product_admin');
+    }
 }
