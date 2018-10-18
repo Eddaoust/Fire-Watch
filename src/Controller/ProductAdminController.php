@@ -46,7 +46,7 @@ class ProductAdminController extends AbstractController
     }
 
     /**
-     * @Route("/admin/update-product/{id}", name="product_update")
+     * @Route("/admin/update/{id}", name="product_update")
      */
     public function updateProduct(Request $request, ObjectManager $manager, $id)
     {
@@ -66,6 +66,29 @@ class ProductAdminController extends AbstractController
         }
 
         return $this->render('product_admin/updateProduct.html.twig',[
+            'form' => $form->createView()
+        ]);
+    }
+
+    /**
+     * @Route("Admin/add", name="product_add")
+     */
+    public function addProduct(Request $request, ObjectManager $manager)
+    {
+        $product = new Product();
+
+        $form = $this->createForm(ProductType::class, $product);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid())
+        {
+            $manager->persist($product);
+            $manager->flush();
+
+            return $this->redirectToRoute('product_admin');
+        }
+
+        return $this->render('product_admin/addProduct.html.twig', [
             'form' => $form->createView()
         ]);
     }

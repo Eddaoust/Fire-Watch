@@ -47,6 +47,7 @@ class SecurityController extends AbstractController
     {
         return $this->redirectToRoute('product_home');
     }
+    // TODO Ajouter un message flash en cas d'erreur et redirection
 
     /**
      * @Route("/logout", name="logout")

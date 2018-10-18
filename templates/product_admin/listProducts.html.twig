@@ -9,7 +9,7 @@
             <h1 class="display-4">Products Dashboard</h1>
             <p class="lead">The space where you can manage all your products.</p>
             <button class="btn btn-warning" type="button">Products in your shop <span class="badge badge-light">{{ products | length }}</span></button>
-            <a href="#" class="btn btn-warning">Add product</a>
+            <a href="{{ path('product_add') }}" class="btn btn-warning">Add product</a>
         </div>
     </div>
 
