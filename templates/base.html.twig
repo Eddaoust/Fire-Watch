@@ -42,7 +42,7 @@
             </ul>
         </div>
         {% if app.user %}
-            {% if app.user.roles[0] == "ROLE_ADMIN" %}
+            {% if app.user.role == "ROLE_ADMIN" %}
                 <a href="{{ path('product_admin_home') }}" class="btn btn-outline-warning btn-sm" style="margin-right: 5px">Administration</a>
             {% endif %}
             <a href="{{ path('logout') }}" class="btn btn-outline-warning btn-sm " style="margin-right: 5px">Logout</a>

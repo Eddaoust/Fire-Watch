@@ -42,7 +42,7 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $roles;
+    private $role;
 
     /**
      * @ORM\Column(type="datetime")
@@ -104,12 +104,12 @@ class User implements UserInterface
 
     public function getRoles(): ?array
     {
-        return [$this->roles];
+        return [$this->role];
     }
 
-    public function setRoles(?string $roles): self
+    public function setRole(?string $role): self
     {
-        $this->roles = $roles;
+        $this->role = $role;
 
         return $this;
     }
@@ -162,5 +162,10 @@ class User implements UserInterface
     public function eraseCredentials()
     {
         // TODO: Implement eraseCredentials() method.
+    }
+
+    public function getRole(): ?string
+    {
+        return $this->role;
     }
 }
