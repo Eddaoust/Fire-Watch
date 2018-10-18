@@ -70,6 +70,22 @@ class ProductAdminController extends AbstractController
         ]);
     }
 
+
+    /**
+     * @Route("/admin/delete/{id}", name="product_delete")
+     */
+    public function deleteProduct(ObjectManager $manager, $id)
+    {
+        $repo = $this->getDoctrine()
+            ->getRepository(Product::class);
+        $product = $repo->find($id);
+
+        $manager->remove($product);
+        $manager->flush();
+
+        return $this->redirectToRoute('product_admin');
+    }
+
     /**
      * @Route("/admin/published/{id}", name="product_published")
      */
