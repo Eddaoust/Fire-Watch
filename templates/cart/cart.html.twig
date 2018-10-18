@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Shopping Cart{% endblock %}
+
+{% block body %}
+    {% if app.session.get('cart') is empty %}
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Your Cart</h1>
+                <button class="btn btn-warning" type="button">Products in your cart <span class="badge badge-light">0</span></button>
+            </div>
+        </div>
+    {% else %}
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">Your Cart</h1>
+                <button class="btn btn-warning" type="button">Products in your cart <span class="badge badge-light">{{ app.session.get('cart').totalItems() }}</span></button>
+                <a href="{{ path('cart_clear') }}" class="btn btn-warning">Clear your cart</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12">
+                <h5>Products in the cart: </h5>
+                <table class="table table-hover table-bordered table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in app.session.get('cart').toArray()['items'] %}
+                        <tr>
+                            <td>{{ item['data']['name'] }}</td>
+                            <td>{{ item['data']['quantity'] }}</td>
+                            <td>{{ item['data']['price'] }}&euro;</td>
+                            <td><a href="#">DEL</a></td>
+                        </tr>
+                    {% endfor %}
+                    <tr><td>Total: {{ app.session.get('cart').total() }}&euro;</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}

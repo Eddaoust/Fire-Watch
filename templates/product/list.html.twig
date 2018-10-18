@@ -10,11 +10,12 @@
                 <div class="col-xl-4">
                     <a href="{{ path('product_one', {'id': product.id}) }}" style="text-decoration: none">
                         <div class="card" style="height: 450px; margin-bottom: 20px">
-                            <img class="card-img-top" src="{{ asset('img/collection/') ~ product.img }}" alt="Card image cap" style="height: 300px">
+                            <img class="card-img-top" src="{{ asset('img/collection/') ~ product.img }}" alt="Card image cap" style="height: 250px">
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.name }}</h5>
                                 <h3 class="card-title">{{ product.price }} &euro;</h3>
                                 <h5 class="card-title text-warning">Membre {{ product.promo }} %</h5>
+                                <a class="btn btn-warning btn-sm" href="{{ path('cart_add', {id: product.id, cat: product.category.id}) }}">Add to cart</a>
                             </div>
                         </div>
                     </a>

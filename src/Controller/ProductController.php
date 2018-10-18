@@ -56,5 +56,4 @@ class ProductController extends AbstractController
     {
         return $this->render('product/termsOfUse.html.twig');
     }
-
 }
