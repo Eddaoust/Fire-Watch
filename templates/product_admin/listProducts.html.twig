@@ -39,9 +39,10 @@
                         <td>{{ product.promo }}%</td>
                         <td>{{ product.category.name }}</td>
                         <td><img src="{{ asset('img/collection/') ~ product.img }}" style="width: 50px"></td>
-                        <td style="text-align: center"><a href="{{ path('product_published', {id: product.id}) }}">{% if product.published %}<i class="fas fa-eye"></i>{% else %}<i class="fas fa-eye-slash"></i>{% endif %}</a></td>
-                        <td style="text-align: center"><a href="{{ path('product_update', {id: product.id}) }}"><i class="fas fa-pen"></i></a></td>
-                        <td style="text-align: center"><a href="{{ path('product_delete', {id: product.id}) }}"><i class="fas fa-trash-alt"></i></a></td>
+                        <td class="align-middle" style="text-align: center"><a href="{{ path('product_published', {id: product.id}) }}">{% if product.published %}<i class="fas fa-eye"></i>{% else %}<i class="fas fa-eye-slash"></i>{% endif %}</a></td>
+                        <td class="align-middle" style="text-align: center"><a href="{{ path('product_update', {id: product.id}) }}"><i class="fas fa-pen"></i></a></td>
+                        <td class="align-middle" style="text-align: center"><a href="{{ path('product_delete', {id: product.id}) }}"><i class="fas fa-trash-alt"></i></a></td>
+                        {#TODO Ajouter un effet hover sur les boutons et une validation pour le delete JS#}
                     </tr>
                 {% endfor %}
                 </tbody>
