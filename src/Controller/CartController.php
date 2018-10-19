@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Product;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Cart\Cart;
@@ -46,6 +47,30 @@ class CartController extends AbstractController
         return $this->redirectToRoute('product_list', [
             'cat' => $cat
         ]);
+    }
+
+    /**
+     * @Route("/cart/delete/{id}", name="cart_delete")
+     */
+    public function deleteItem(SessionInterface $session, $id)
+    {
+        $cart = $session->get('cart')->toArray()['items'];
+        foreach ($cart as $item)
+        {
+            if  ($item['id'] == $id)
+            {
+                if ($item['data']['quantity'] == 1)
+                {
+                    $session->get('cart')->remove($id);
+                }
+                else
+                {
+                    $session->get('cart')->update($id, 'quantity', $item['data']['quantity']-=1 );
+                }
+            }
+        }
+        return $this->redirectToRoute('cart');
+
     }
 
     /**

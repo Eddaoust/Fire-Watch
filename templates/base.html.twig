@@ -41,13 +41,13 @@
                 </li>
             </ul>
         </div>
-        {% if app.user %}
-            {% if app.session.get('cart') is empty %}
+        {% if app.user %}{#Test si un user est log#}
+            {% if app.session.get('cart') is empty %}{#Test si un panier existe#}
                 <a class="btn btn-outline-warning btn-sm" href="{{ path('cart') }}" style="margin-right: 5px"><i class="fas fa-shopping-cart"></i> <span class="badge badge-light">0</span></a>
             {% else %}
                 <a class="btn btn-outline-warning btn-sm" href="{{ path('cart') }}" style="margin-right: 5px"><i class="fas fa-shopping-cart"></i> <span class="badge badge-light">{{ app.session.get('cart').totalItems() }}</span></a>
             {% endif %}
-            {% if app.user.role == "ROLE_ADMIN" %}
+            {% if app.user.role == "ROLE_ADMIN" %}{#Test si admin #}
                 <a href="{{ path('product_admin_home') }}" class="btn btn-outline-warning btn-sm" style="margin-right: 5px">Administration</a>
             {% endif %}
             <a href="{{ path('logout') }}" class="btn btn-outline-warning btn-sm " style="margin-right: 5px">Logout</a>
