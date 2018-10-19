@@ -3,6 +3,14 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="alert alert-{{ label }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-4">Firewatch</h1>

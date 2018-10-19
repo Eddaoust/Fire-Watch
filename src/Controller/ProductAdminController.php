@@ -61,7 +61,7 @@ class ProductAdminController extends AbstractController
         {
             $manager->persist($product);
             $manager->flush();
-
+            $this->addFlash('success', 'Your product is updated');
             return $this->redirectToRoute('product_admin');
         }
 
@@ -84,7 +84,7 @@ class ProductAdminController extends AbstractController
         {
             $manager->persist($product);
             $manager->flush();
-
+            $this->addFlash('success', 'Product added');
             return $this->redirectToRoute('product_admin');
         }
 
@@ -105,7 +105,7 @@ class ProductAdminController extends AbstractController
 
         $manager->remove($product);
         $manager->flush();
-
+        $this->addFlash('success', 'Product deleted');
         return $this->redirectToRoute('product_admin');
     }
 

@@ -41,7 +41,7 @@ class UserAdminController extends AbstractController
         {
             $manager->persist($user);
             $manager->flush();
-
+            $this->addFlash('success', 'User\'s data updated');
             return $this->redirectToRoute('user_admin');
         }
 
@@ -61,7 +61,7 @@ class UserAdminController extends AbstractController
 
         $manager->remove($user);
         $manager->flush();
-
+        $this->addFlash('success', 'User deleted');
         return $this->redirectToRoute('user_admin');
     }
 }

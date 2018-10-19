@@ -30,7 +30,7 @@ class SecurityController extends AbstractController
             $user->setCreated(new \DateTime('now'));
             $manager->persist($user);
             $manager->flush();
-
+            $this->addFlash('success', 'Your are registered');
             return $this->redirectToRoute('product_home');
         }
 
@@ -44,6 +44,7 @@ class SecurityController extends AbstractController
      */
     public function login()
     {
+        $this->addFlash('danger', 'Wrong username or password');
         return $this->redirectToRoute('product_home');
     }
     // TODO Ajouter un message flash en cas d'erreur et redirection
