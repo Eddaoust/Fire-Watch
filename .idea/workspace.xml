@@ -3,24 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9aecc61f-b13e-4d4e-9f39-b690ef4d5927" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/18.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/19.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/19.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/collection/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/collection/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/cart/cart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/cart.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/product/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/oneProduct.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/oneProduct.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +64,7 @@
     <session id="808193094">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -88,8 +73,8 @@
           <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,7 +87,7 @@
           <entry key="php" value="96" />
           <entry key="product" value="18" />
           <entry key="sql" value="1" />
-          <entry key="twig" value="123" />
+          <entry key="twig" value="126" />
           <entry key="user" value="15" />
           <entry key="yaml" value="25" />
         </counts>
@@ -116,7 +101,7 @@
           <entry key="JavaScript" value="4" />
           <entry key="PHP" value="96" />
           <entry key="Scratch" value="1" />
-          <entry key="Twig" value="123" />
+          <entry key="Twig" value="126" />
           <entry key="YAML" value="25" />
         </counts>
       </usages-collector>
@@ -126,8 +111,8 @@
           <entry key="env" value="22" />
           <entry key="js" value="14" />
           <entry key="php" value="8320" />
-          <entry key="twig" value="8272" />
-          <entry key="txt" value="891" />
+          <entry key="twig" value="8321" />
+          <entry key="txt" value="921" />
           <entry key="yaml" value="466" />
         </counts>
       </usages-collector>
@@ -136,9 +121,9 @@
           <entry key=".env file" value="22" />
           <entry key="JavaScript" value="14" />
           <entry key="PHP" value="8320" />
-          <entry key="PLAIN_TEXT" value="891" />
+          <entry key="PLAIN_TEXT" value="921" />
           <entry key="Scratch" value="82" />
-          <entry key="Twig" value="8272" />
+          <entry key="Twig" value="8321" />
           <entry key="YAML" value="466" />
         </counts>
       </usages-collector>
@@ -151,11 +136,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/CartController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+            <state relative-caret-position="1400">
+              <caret line="77" column="7" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
               <folding>
                 <element signature="e#34#57#0#PHP" expanded="true" />
               </folding>
@@ -164,13 +149,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/product/oneProduct.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cart/cart.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
-              <folding>
-                <element signature="e#1764#1790#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="580">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -178,13 +169,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/product/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-              <folding>
-                <element signature="e#292#321#0#HTML" expanded="true" />
-                <element signature="e#365#407#0#HTML" expanded="true" />
-                <element signature="e#535#569#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/product_admin/listProducts.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -232,7 +227,6 @@
         <option value="$PROJECT_DIR$/src/Form/UserUpdateType.php" />
         <option value="$PROJECT_DIR$/src/Controller/UserAdminController.php" />
         <option value="$PROJECT_DIR$/templates/user_admin/listUser.html.twig" />
-        <option value="$PROJECT_DIR$/templates/product/oneProduct.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ShoppingCartController.php" />
         <option value="$PROJECT_DIR$/src/Service/CartService.php" />
         <option value="$PROJECT_DIR$/templates/product/home.html.twig" />
@@ -240,9 +234,10 @@
         <option value="$PROJECT_DIR$/src/Controller/ProductController.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/CartController.php" />
-        <option value="$PROJECT_DIR$/templates/cart/cart.html.twig" />
         <option value="$PROJECT_DIR$/templates/product_admin/listProducts.html.twig" />
         <option value="$PROJECT_DIR$/templates/product/list.html.twig" />
+        <option value="$PROJECT_DIR$/templates/product/oneProduct.html.twig" />
+        <option value="$PROJECT_DIR$/templates/cart/cart.html.twig" />
       </list>
     </option>
   </component>
@@ -364,8 +359,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -472,6 +467,12 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ed-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ed-symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="product_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -532,7 +533,8 @@
       <workItem from="1539853701144" duration="6285000" />
       <workItem from="1539867235966" duration="13346000" />
       <workItem from="1539933044476" duration="38000" />
-      <workItem from="1539933100511" duration="2755000" />
+      <workItem from="1539933100511" duration="3338000" />
+      <workItem from="1539952179417" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="Creation du service pour déclarer les catégories en global">
       <created>1538994759106</created>
@@ -765,11 +767,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539894695429</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="add delete method on cart">
+      <created>1539937350196</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1539937350196</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92989000" />
+    <option name="totallyTimeSpent" value="93884000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -781,9 +790,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14529915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14643237" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -795,9 +804,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32883817" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32987553" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32883817" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3279678" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35580912" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3551308" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32987553" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32987553" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -837,7 +846,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout du provider in_database" />
     <MESSAGE value="Modal pour le login form" />
     <MESSAGE value="Ajout de contrainte de registration &#10;Attribut confirm password" />
     <MESSAGE value="Ajout form registration &amp; login" />
@@ -862,7 +870,8 @@
     <MESSAGE value="Finishing crud on product" />
     <MESSAGE value="Finishing crud on user" />
     <MESSAGE value="add shopping cart system" />
-    <option name="LAST_COMMIT_MESSAGE" value="add shopping cart system" />
+    <MESSAGE value="add delete method on cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete method on cart" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
@@ -1064,13 +1073,6 @@
     <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/product/oneProduct.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ShoppingCartController.php" />
     <entry file="file://$PROJECT_DIR$/src/Service/CartService.php" />
     <entry file="file://$PROJECT_DIR$/src/Service/TwigGlobalCategory.php">
@@ -1128,42 +1130,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/product_admin/listProducts.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Controller/CartController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        <state relative-caret-position="1400">
+          <caret line="77" column="7" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+          <folding>
+            <element signature="e#34#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/product/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="160">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
-            <element signature="e#292#321#0#HTML" expanded="true" />
-            <element signature="e#365#407#0#HTML" expanded="true" />
-            <element signature="e#535#569#0#HTML" expanded="true" />
+            <element signature="e#383#430#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product_admin/listProducts.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product/oneProduct.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/cart/cart.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
-          <folding>
-            <element signature="e#1764#1790#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="580">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
         </state>
       </provider>
     </entry>

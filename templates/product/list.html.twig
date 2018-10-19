@@ -9,7 +9,7 @@
         {% if product.published %}
                 <div class="col-xl-4">
                     <a href="{{ path('product_one', {'id': product.id}) }}" style="text-decoration: none">
-                        <div class="card" style="margin-bottom: 20px">
+                        <div class="card align-middle" style="margin-bottom: 20px; text-align: center">
                             <img class="card-img-top" src="{{ asset('img/collection/') ~ product.img }}" alt="Card image cap" style="height: 250px; width: auto">
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.name }}</h5>
