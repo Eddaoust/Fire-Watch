@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Product;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -82,5 +83,30 @@ class CartController extends AbstractController
         $session->remove('cart');
 
         return $this->redirectToRoute('cart');
+    }
+
+    /**
+     * @Route("/cart/buy", name="cart_buy")
+     */
+    public function buyItems(Request $request)
+    {
+        if ($request->request->get('stripeToken'))
+        {
+            $session = new Session();
+            // Set your secret key: remember to change this to your live secret key in production
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+            \Stripe\Stripe::setApiKey("sk_test_MGl9jpbONblthpxXxU3wgXKG");
+
+            $charge = \Stripe\Charge::create([
+                'amount' => $session->get('cart')->total()*100,
+                'currency' => 'eur',
+                'source' => $request->request->get('stripeToken')
+            ]);
+            $session->remove('cart');
+
+            return $this->redirectToRoute('cart');
+
+        }
+        return $this->render('cart/buy.html.twig');
     }
 }

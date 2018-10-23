@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <h5>Products in the cart: </h5>
-                <table class="table table-hover table-bordered table-sm">
+                <table class="table table-bordered table-sm">
                     <thead>
                     <tr>
                         <th scope="col">Name</th>
@@ -39,7 +39,10 @@
                             <td class="align-middle" style="text-align: center"><a href="{{ path('cart_delete', {id: item['id']}) }}"><i class="fas fa-trash-alt"></i></a></td>
                         </tr>
                     {% endfor %}
-                    <tr><td>Total: {{ app.session.get('cart').total() }}&euro;</td></tr>
+                    <tr>
+                        <td>Total: {{ app.session.get('cart').total() }}&euro;</td>
+                        <td><a href="{{ path('cart_buy') }}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Buy</a></td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
