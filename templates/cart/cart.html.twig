@@ -1,8 +1,20 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheet %}<link rel="stylesheet" href="{{ asset('css/stripeForm.css')}}">{% endblock %}
+
 {% block title %}Shopping Cart{% endblock %}
 
 {% block body %}
+
+    {% for label, messages in app.flashes %}
+        {% for message in messages %}
+            <div class="alert alert-{{ label }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+
     {% if app.session.get('cart') is empty %}
         <div class="jumbotron">
             <div class="container">
@@ -41,12 +53,34 @@
                     {% endfor %}
                     <tr>
                         <td>Total: {{ app.session.get('cart').total() }}&euro;</td>
-                        <td><a href="{{ path('cart_buy') }}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Buy</a></td>
                     </tr>
                     </tbody>
                 </table>
+                <a href="#collapseExample" class="btn btn-warning btn-sm" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-shopping-cart"></i> Buy</a>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <form action="{{ path('cart_buy') }}" method="post" id="payment-form">
+                            <div class="form">
+                                <label for="card-element">
+                                    Credit or debit card
+                                </label>
+                                <div id="card-element">
+                                    <!-- A Stripe Element will be inserted here. -->
+                                </div>
+
+                                <!-- Used to display form errors. -->
+                                <div id="card-errors" role="alert"></div>
+                            </div>
+
+                            <button class="btn btn-sm btn-outline-warning" style="margin-top: 10px">Submit Payment</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     {% endif %}
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="{{ asset('js/stripe.js')}}"></script>
 
 {% endblock %}

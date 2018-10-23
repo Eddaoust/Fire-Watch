@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aecc61f-b13e-4d4e-9f39-b690ef4d5927" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/stripeForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/stripe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cart/buy.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ed-symfony.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ed-symfony.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart/buy.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/cart/cart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart/cart.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,17 +57,18 @@
     <session id="808193094">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="6" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="4" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="5" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,10 +78,10 @@
           <entry key="env" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="6" />
-          <entry key="php" value="105" />
+          <entry key="php" value="106" />
           <entry key="product" value="18" />
           <entry key="sql" value="1" />
-          <entry key="twig" value="136" />
+          <entry key="twig" value="138" />
           <entry key="user" value="18" />
           <entry key="yaml" value="26" />
         </counts>
@@ -99,9 +93,9 @@
           <entry key="Database Element" value="47" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="105" />
+          <entry key="PHP" value="106" />
           <entry key="Scratch" value="1" />
-          <entry key="Twig" value="136" />
+          <entry key="Twig" value="138" />
           <entry key="YAML" value="26" />
         </counts>
       </usages-collector>
@@ -110,9 +104,9 @@
           <entry key="cell" value="92" />
           <entry key="env" value="22" />
           <entry key="js" value="14" />
-          <entry key="php" value="8982" />
-          <entry key="twig" value="8855" />
-          <entry key="txt" value="934" />
+          <entry key="php" value="9050" />
+          <entry key="twig" value="8903" />
+          <entry key="txt" value="957" />
           <entry key="yaml" value="466" />
         </counts>
       </usages-collector>
@@ -120,10 +114,10 @@
         <counts>
           <entry key=".env file" value="22" />
           <entry key="JavaScript" value="20" />
-          <entry key="PHP" value="8982" />
-          <entry key="PLAIN_TEXT" value="934" />
+          <entry key="PHP" value="9050" />
+          <entry key="PLAIN_TEXT" value="957" />
           <entry key="Scratch" value="92" />
-          <entry key="Twig" value="8849" />
+          <entry key="Twig" value="8897" />
           <entry key="YAML" value="466" />
         </counts>
       </usages-collector>
@@ -136,20 +130,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/cart/cart.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+            <state relative-caret-position="220">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <element signature="e#3281#3305#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/CartController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="561">
+              <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
               <folding>
                 <element signature="e#34#57#0#PHP" expanded="true" />
               </folding>
@@ -166,20 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/cart/buy.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/stripe.js">
+        <entry file="file://$PROJECT_DIR$/src/Controller/UserAdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="521">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -235,12 +214,12 @@
         <option value="$PROJECT_DIR$/templates/product_admin/listProducts.html.twig" />
         <option value="$PROJECT_DIR$/templates/user_admin/listUser.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/UserAdminController.php" />
-        <option value="$PROJECT_DIR$/templates/cart/cart.html.twig" />
         <option value="$PROJECT_DIR$/public/css/stripeForm.css" />
         <option value="$PROJECT_DIR$/public/js/stripe.js" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/CartController.php" />
         <option value="$PROJECT_DIR$/templates/cart/buy.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/CartController.php" />
+        <option value="$PROJECT_DIR$/templates/cart/cart.html.twig" />
       </list>
     </option>
   </component>
@@ -436,6 +415,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -465,11 +445,16 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ed-symfony" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ed-symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,7 +514,10 @@
       <workItem from="1539952179417" duration="3407000" />
       <workItem from="1539958919986" duration="250000" />
       <workItem from="1540281090815" duration="16000" />
-      <workItem from="1540281123120" duration="4246000" />
+      <workItem from="1540281123120" duration="4355000" />
+      <workItem from="1540294097214" duration="3000" />
+      <workItem from="1540299586641" duration="1258000" />
+      <workItem from="1540320425223" duration="1129000" />
     </task>
     <task id="LOCAL-00001" summary="Creation du service pour déclarer les catégories en global">
       <created>1538994759106</created>
@@ -783,11 +771,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539957383611</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Add Stripe Payement">
+      <created>1540286799961</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1540286799962</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101491000" />
+    <option name="totallyTimeSpent" value="103990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -802,11 +797,11 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15140416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15689866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897383" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32883817" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -814,7 +809,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32883817" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32987553" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3279678" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32780084" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3547718" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32987553" />
@@ -856,7 +851,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de contrainte de registration &#10;Attribut confirm password" />
     <MESSAGE value="Ajout form registration &amp; login" />
     <MESSAGE value="Registration form" />
     <MESSAGE value="Add SecurityController" />
@@ -881,7 +875,8 @@
     <MESSAGE value="add shopping cart system" />
     <MESSAGE value="add delete method on cart" />
     <MESSAGE value="add flash message" />
-    <option name="LAST_COMMIT_MESSAGE" value="add flash message" />
+    <MESSAGE value="Add Stripe Payement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Stripe Payement" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -1124,27 +1119,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_admin/listUser.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UserAdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ProductController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,41 +1133,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cart/cart.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/cart/buy.html.twig" />
+    <entry file="file://$PROJECT_DIR$/public/js/stripe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        <state relative-caret-position="400">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UserAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_admin/listUser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="-308">
           <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/stripe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/CartController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="561">
+          <caret line="100" column="63" selection-start-line="100" selection-start-column="63" selection-end-line="100" selection-end-column="63" />
           <folding>
             <element signature="e#34#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cart/buy.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/cart/cart.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+        <state relative-caret-position="220">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#3281#3305#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

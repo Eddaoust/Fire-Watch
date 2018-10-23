@@ -103,10 +103,11 @@ class CartController extends AbstractController
                 'source' => $request->request->get('stripeToken')
             ]);
             $session->remove('cart');
+            $this->addFlash('success', 'Your order is validated!');
 
             return $this->redirectToRoute('cart');
 
         }
-        return $this->render('cart/buy.html.twig');
+        return $this->render('cart/cart.html.twig');
     }
 }
