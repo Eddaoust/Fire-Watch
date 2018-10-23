@@ -7,10 +7,33 @@ use App\Entity\Product;
 use App\Form\ProductType;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\Encoder\JsonEncoder;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use Symfony\Component\Serializer\Serializer;
 
 class ProductController extends AbstractController
 {
+    /**
+     * @Route("/api", name="product_api", methods={"GET"})
+     */
+    public function testApi()
+    {
+        $repo = $this->getDoctrine()
+            ->getRepository(Category::class);
+        $cat = $repo->findAll();
+
+        $encoders = [new JsonEncoder()];
+        $normalizers = [
+            (new ObjectNormalizer())
+            ->setIgnoredAttributes(['category'])
+        ];
+        $serializer = new Serializer($normalizers, $encoders);
+
+        $data = $serializer->serialize($cat, 'json');
+        return new JsonResponse($data, 200, [], true);
+    }
     /**
      * @Route("/", name="product_home")
      */
