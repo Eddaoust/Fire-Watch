@@ -47,7 +47,6 @@ class SecurityController extends AbstractController
         $this->addFlash('danger', 'Wrong username or password');
         return $this->redirectToRoute('product_home');
     }
-    // TODO Ajouter un message flash en cas d'erreur et redirection
 
     /**
      * @Route("/logout", name="logout")

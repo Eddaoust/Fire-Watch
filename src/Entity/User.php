@@ -66,9 +66,15 @@ class User implements UserInterface
      */
     private $purchases;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Messenger", mappedBy="user")
+     */
+    private $messengers;
+
     public function __construct()
     {
         $this->purchases = new ArrayCollection();
+        $this->messengers = new ArrayCollection();
     }
 
 
@@ -206,6 +212,37 @@ class User implements UserInterface
             // set the owning side to null (unless already changed)
             if ($purchase->getUser() === $this) {
                 $purchase->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Messenger[]
+     */
+    public function getMessengers(): Collection
+    {
+        return $this->messengers;
+    }
+
+    public function addMessenger(Messenger $messenger): self
+    {
+        if (!$this->messengers->contains($messenger)) {
+            $this->messengers[] = $messenger;
+            $messenger->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMessenger(Messenger $messenger): self
+    {
+        if ($this->messengers->contains($messenger)) {
+            $this->messengers->removeElement($messenger);
+            // set the owning side to null (unless already changed)
+            if ($messenger->getUser() === $this) {
+                $messenger->setUser(null);
             }
         }
 

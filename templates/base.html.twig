@@ -34,7 +34,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Membre</a>
+                    <a class="nav-link" href="{{ path('messenger') }}"{{ app.session.set('userId', app.user.id) }}>Membre</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
@@ -135,6 +135,6 @@
             crossorigin=""></script>
     <script src="{{ asset('js/map.js')}}"></script>
     <script src="{{ asset('js/registerModal.js')}}"></script>
-{% block javascript %}{% endblock %}
+{% block js %}{% endblock %}
 </body>
 </html>
