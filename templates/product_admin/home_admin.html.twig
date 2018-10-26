@@ -38,26 +38,24 @@
             </table>
         </div>
         <div class="col-xl-5 offset-xl-2">
-            <h5>Last product ordered:</h5>
+            <h5>Last order purchased:</h5>
             <table class="table table-hover table-bordered table-sm">
                 <thead>
                 <tr>
                     <th scope="col">Id</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Promo</th>
-                    <th scope="col">Image</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Date</th>
                 </tr>
                 </thead>
                 <tbody>
-                {% for product in products %}
+                {% for purchase in purchases %}
                     {% if loop.index <= 10 %}
                     <tr>
-                        <th scope="row">{{ product.id }}</th>
-                        <td>{{ product.name }}</td>
-                        <td>{{ product.price }}&euro;</td>
-                        <td>{{ product.promo }} %</td>
-                        <td><img src="{{ asset('img/collection/') ~ product.img }}" style="width: 50px"></td>
+                        <th scope="row">{{ purchase.id }}</th>
+                        <td>{{ purchase.user.email }}</td>
+                        <td>{{ purchase.total }}&euro;</td>
+                        <td>{{ purchase.date | date('d/m/Y') }}</td>
                     </tr>
                     {% endif %}
                 {% endfor %}

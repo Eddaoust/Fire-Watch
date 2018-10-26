@@ -3,6 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\Product;
+use App\Entity\Purchase;
+use App\Entity\User;
+use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -88,13 +91,21 @@ class CartController extends AbstractController
     /**
      * @Route("/cart/buy", name="cart_buy")
      */
-    public function buyItems(Request $request)
+    public function buyItems(Request $request, ObjectManager $manager)
     {
         if ($request->request->get('stripeToken'))
         {
             $session = new Session();
-            // Set your secret key: remember to change this to your live secret key in production
-// See your keys here: https://dashboard.stripe.com/account/apikeys
+            $purchase = new Purchase();
+
+            $user = $this->getDoctrine()
+                ->getRepository(User::class)
+                ->find($session->get('userId'));
+
+            $purchase->setTotal($session->get('cart')->total());
+            $purchase->setUser($user);
+            $purchase->setDate(new \DateTime('now'));
+
             \Stripe\Stripe::setApiKey("sk_test_MGl9jpbONblthpxXxU3wgXKG");
 
             $charge = \Stripe\Charge::create([
@@ -102,6 +113,8 @@ class CartController extends AbstractController
                 'currency' => 'eur',
                 'source' => $request->request->get('stripeToken')
             ]);
+            $manager->persist($purchase);
+            $manager->flush();
             $session->remove('cart');
             $this->addFlash('success', 'Your order is validated!');
 

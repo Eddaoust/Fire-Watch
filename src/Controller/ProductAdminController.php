@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Product;
+use App\Entity\Purchase;
 use App\Entity\User;
 use App\Form\ProductType;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -18,15 +19,15 @@ class ProductAdminController extends AbstractController
     public function homeAdmin()
     {
         $repo = $this->getDoctrine()
-            ->getRepository(Product::class);
-        $products = $repo->findAll();
+            ->getRepository(Purchase::class);
+        $purchase = $repo->findAll();
 
         $repo = $this->getDoctrine()
             ->getRepository(User::class);
         $users = $repo->findAll();
 
         return $this->render('product_admin/home_admin.html.twig', [
-            'products' => $products,
+            'purchases' => $purchase,
             'users' => $users
         ]);
     }
