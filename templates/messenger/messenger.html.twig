@@ -11,13 +11,11 @@
         </div>
     </div>
     <div id="messenger"></div>
-    <form action="{{ path('messenger_add') }}" method="post">
-        <div class="form-group">
-            <label for="message">Enter your message</label>
-            <textarea class="form-control" id="message" rows="3" name="message"></textarea>
-        </div>
-        <input type="submit" class="btn btn-outline-warning">
-    </form>
+    <div class="form-group">
+        <label for="message">Enter your message</label>
+        <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+    </div>
+    <input type="button" class="btn btn-outline-warning" id="submit" value="Send">
 
 {% endblock %}
 {% block js %}

@@ -34,7 +34,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('messenger') }}"{{ app.session.set('userId', app.user.id) }}>Membre</a>
+                    <a class="nav-link" href="{{ path('messenger') }}"{% if app.user %}{{ app.session.set('userId', app.user.id) }}{{ app.session.set('userName', app.user.username) }}{% endif %}>Membre</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
