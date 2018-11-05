@@ -61,7 +61,7 @@ class ProductController extends AbstractController
 
     /**
      * @Route("/api", name="product_api", methods={"GET"})
-     * Methode qui permet d'accéder aux data via AJAX
+     * Methode de test qui permet d'accéder aux data via AJAX
      */
     public function testApi()
     {

@@ -19,6 +19,8 @@ class CartController extends AbstractController
 {
     /**
      * @Route("/cart", name="cart")
+     * Système de panier d'achat avec le bundle :
+     * https://github.com/mike182uk/cart#cart-store
      */
     public function index()
     {
@@ -30,6 +32,7 @@ class CartController extends AbstractController
 
     /**
      * @Route("/cart/add/{id}/{cat}", name="cart_add")
+     * Ajout d'un produit dans le panier
      */
     public function addProduct($id, $cat)
     {
@@ -90,6 +93,7 @@ class CartController extends AbstractController
 
     /**
      * @Route("/cart/buy", name="cart_buy")
+     * Achat des produits avec Stripe: https://stripe.com/be
      */
     public function buyItems(Request $request, ObjectManager $manager)
     {

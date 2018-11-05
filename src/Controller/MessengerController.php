@@ -27,28 +27,8 @@ class MessengerController extends AbstractController
     }
 
     /**
-     * @Route("/messenger/add", name="messenger_add")
-     */
-    public function add(Request $request, ObjectManager $manager, Session $session)
-    {
-        $user = $this->getDoctrine()
-            ->getRepository(User::class)
-            ->find($session->get('userId'));
-
-        $messenger = new Messenger();
-        $messenger->setUser($user);
-        $messenger->setMessage($request->request->get('message'));
-        $messenger->setUsername($session->get('userName'));
-        $messenger->setDate(new \DateTime('now'));
-
-        $manager->persist($messenger);
-        $manager->flush();
-
-        return $this->redirectToRoute('messenger');
-    }
-
-    /**
      * @Route("/messenger/ajax", name="messenger_ajax")
+     * Méthode qui qui retourne les données pour un appel AJAX
      */
     public function ajaxMessage()
     {
@@ -69,6 +49,7 @@ class MessengerController extends AbstractController
 
     /**
      * @Route("/messenger/ajax_add", name="messenger_add")
+     * Récupération du message et enregistrement en database
      */
     public function ajaxAdd(Request $request, Session $session, ObjectManager $manager)
     {

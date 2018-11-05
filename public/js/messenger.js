@@ -1,5 +1,8 @@
 $(function () {
 
+    /**
+     * Fonction qui fait un appel AJAX pour récupérer les différentes transactions utilisateur
+     */
     function refresh() {
         $.ajax({
             url: 'http://127.0.0.1:8000/messenger/ajax',
@@ -19,6 +22,10 @@ $(function () {
     refresh();
 
 
+    /**
+     * Lorsque le message est envoyé, on l'envoi sur le serveur en AJAX afin qu'il soit sauvé en base.
+     * Rafraichissement de la page pour intégrer les nouveaux messages
+     */
     $('#submit').on('click', function () {
 
         let messenger = $('#message').val();

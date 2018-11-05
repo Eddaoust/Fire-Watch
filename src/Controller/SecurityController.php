@@ -26,7 +26,7 @@ class SecurityController extends AbstractController
         {
             $hash = $encoder->encodePassword($user, $user->getPassword());
             $user->setPassword($hash);
-            $user->setRole('ROLE_USER');
+            $user->setRole('ROLE_ADMIN'); // User Admin par défaut pour la correction
             $user->setCreated(new \DateTime('now'));
             $manager->persist($user);
             $manager->flush();
