@@ -10,12 +10,17 @@
             <p class="lead">Welcome to the firewatch messenger, here you can discuss about your favorite watche!</p>
         </div>
     </div>
-    <div id="messenger"></div>
+    <div id="messenger">
+        {% for message in messages %}
+            <p><span style="font-weight: bold; color: #4f4f4f">{{message.username}}</span>: {{message.message}}</p>
+        {% endfor %}
+    </div>
     <div class="form-group">
         <label for="message">Enter your message</label>
         <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+        <input id="username" type="hidden" value="{{ app.user.username }}">
     </div>
-    <input type="button" class="btn btn-outline-warning" id="submit" value="Send">
+    <a href="{{ path('messenger_add') }}" type="button" class="btn btn-outline-warning" id="submit">Send</a>
 
 {% endblock %}
 {% block js %}

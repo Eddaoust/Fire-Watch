@@ -23,14 +23,19 @@ class MessengerController extends AbstractController
      */
     public function index()
     {
-        return $this->render('messenger/messenger.html.twig');
+        $messenger = $this->getDoctrine()
+            ->getRepository(Messenger::class)
+            ->findAll();
+
+        return $this->render('messenger/messenger.html.twig', [
+            'messages' => $messenger
+        ]);
     }
 
     /**
-     * @Route("/messenger/ajax", name="messenger_ajax")
      * Méthode qui qui retourne les données pour un appel AJAX
-     */
-    public function ajaxMessage()
+     *
+    public function ajaxMessage() // Enregistrer les messages dans fichier JSON
     {
         $messages = $this->getDoctrine()
             ->getRepository(Messenger::class)
@@ -46,6 +51,7 @@ class MessengerController extends AbstractController
 
         return new JsonResponse($data, 200, [], true);
     }
+     * /
 
     /**
      * @Route("/messenger/ajax_add", name="messenger_add")
@@ -69,6 +75,6 @@ class MessengerController extends AbstractController
         $manager->persist($messenger);
         $manager->flush();
 
-        return new Response();
+        return $this->json(['code'=> 200], 200);
     }
 }

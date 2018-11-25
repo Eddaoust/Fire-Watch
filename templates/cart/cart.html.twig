@@ -62,7 +62,7 @@
                         <form action="{{ path('cart_buy') }}" method="post" id="payment-form">
                             <div class="form">
                                 <label for="card-element">
-                                    Credit or debit card
+                                    Card Number fill with "42", expiration date valid & code 123
                                 </label>
                                 <div id="card-element">
                                     <!-- A Stripe Element will be inserted here. -->
@@ -82,5 +82,6 @@
 
     <script src="https://js.stripe.com/v3/"></script>
     <script src="{{ asset('js/stripe.js')}}"></script>
+    <script src="{{ asset('js/popover.js')}}"></script>
 
 {% endblock %}
